@@ -3,6 +3,7 @@ const axios = require("axios")
 const { checkEmpty } = require("../utils/checkEmpty")
 const Customer = require("../models/Customer")
 const Menu = require("../models/Menu")
+const Resturant = require("../models/Resturant")
 exports.getLocation = asyncHandler(async (req, res) => {
     const { latitude, longitude } = req.body
     const { isError, error } = checkEmpty({ latitude, longitude })
