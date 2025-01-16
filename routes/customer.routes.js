@@ -8,7 +8,7 @@ router
     .post("/get-location", getLocation)
     .post("/update-info", updateCustomerInfo)
     .get("/get-resturant", getResturants)
-    .get("/get-resturant-menu", getResturantMenu)
+    .get("/get-resturant-menu/:rid", getResturantMenu)
 
 
 module.exports = router
